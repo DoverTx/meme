@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&family=Righteous&display=swap" rel="stylesheet">
+    <title>MeMe</title>
+</head>
+<body>
+    <div class="header " id="myHeader">
+        <div class="row title" id="title">
+            <h1> The MEME Show!!!</h1>
+        </div>
+        <div class="input-container" id="inputBox">
+            <form id="imgForm" class="imgForm">
+                <label for="imgFile" class="imgFile">Image file:</label>
+                <input type="text"  id="imgFile" name="imgFile" required accept="image/png,image/gif,image/jpeg" 
+                    maxlength="80" size=40" placeholder="Enter the URL for your meme image" /> <br>
+        
+                <label for="topText" class="topText">Top text:     </label>
+                <input type="text"  id="topText"name="topText" maxlength="50" size=40
+                    placeholder="(optional) Enter text to place on top of meme"> <br>
+
+                <label for="bottomText" class="bottomText">Bottom text:</label>
+                <input type="text"  id="bottomText" name="bottomText" maxlength="50" size=40
+                    placeholder="(optional) Enter text to place on bottom of meme"> <br><br>
+
+                <input class="submit"  type="submit" value="Add MeMe"><br>
+            </form>
+        </div>  <!-- input-container -->
+    </div> <!-- header --> 
+
+    <div id="img-container" class="img-container"></div>
+
+    <script src="meme.js"></script>
+</body>
+</html>
